@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Use Case Diagram">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Actors -->
+        <mxCell id="guest" value="Guest" style="shape=actor;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="50" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="host" value="Host" style="shape=actor;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="50" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="admin" value="Admin" style="shape=actor;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="450" width="50" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Use cases -->
+        <mxCell id="uc1" value="Register / Login" style="ellipse;fillColor=#FFEECC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc2" value="Manage Properties" style="ellipse;fillColor=#CCEEFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc3" value="Book Property" style="ellipse;fillColor=#FFCCEE;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc4" value="Make Payment" style="ellipse;fillColor=#CCFFEE;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc5" value="Add Reviews" style="ellipse;fillColor=#FFEEFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="500" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="e1" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="guest" target="uc1"/>
+        <mxCell id="e2" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="guest" target="uc3"/>
+        <mxCell id="e3" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="guest" target="uc4"/>
+        <mxCell id="e4" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="guest" target="uc5"/>
+        <mxCell id="e5" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="host" target="uc2"/>
+        <mxCell id="e6" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="admin" target="uc2"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
