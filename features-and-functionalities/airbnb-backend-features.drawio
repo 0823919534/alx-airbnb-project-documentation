@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Backend Features">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Backend Features -->
+        <mxCell id="user-auth" value="User Authentication&#xa;- Sign up/login&#xa;- Password reset&#xa;- Roles (guest/host/admin)" style="shape=rectangle;fillColor=#FFEECC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="200" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="property-mgmt" value="Property Management&#xa;- CRUD properties&#xa;- Amenities & Photos" style="shape=rectangle;fillColor=#CCEEFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="booking" value="Booking System&#xa;- Create/Update/Cancel bookings&#xa;- Availability check" style="shape=rectangle;fillColor=#FFCCEE;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="50" width="200" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="payments" value="Payments&#xa;- Process payments&#xa;- Transaction status" style="shape=rectangle;fillColor=#CCFFEE;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="50" y="250" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="reviews" value="Reviews&#xa;- Add ratings/comments" style="shape=rectangle;fillColor=#FFEEFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="250" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="notifications" value="Notifications&#xa;- Email/WhatsApp alerts" style="shape=rectangle;fillColor=#EEFFCC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="550" y="250" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="search" value="Search & Filters&#xa;- Location, price, availability, amenities" style="shape=rectangle;fillColor=#CCCCEE;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="300" y="400" width="200" height="80" as="geometry"/>
+        </mxCell>
+
+        <!-- Example connections -->
+        <mxCell id="e1" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="booking" target="payments"/>
+        <mxCell id="e2" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="booking" target="notifications"/>
+        <mxCell id="e3" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="property-mgmt" target="booking"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
