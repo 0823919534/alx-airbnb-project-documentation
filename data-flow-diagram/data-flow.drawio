@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Data Flow Diagram">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        
+        <!-- Entities -->
+        <mxCell id="guest" value="Guest" style="shape=actor;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="50" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="host" value="Host" style="shape=actor;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="200" width="50" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Processes -->
+        <mxCell id="p1" value="User Registration & Login" style="ellipse;fillColor=#FFEECC;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="p2" value="Booking & Payment" style="ellipse;fillColor=#CCFFEE;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="p3" value="Property Management" style="ellipse;fillColor=#CCEEFF;strokeColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="160" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Data Stores -->
+        <mxCell id="d1" value="Users DB" style="shape=cylinder;fillColor=#FFFFCC;" vertex="1" parent="1">
+          <mxGeometry x="400" y="50" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d2" value="Bookings DB" style="shape=cylinder;fillColor=#FFFFCC;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="d3" value="Properties DB" style="shape=cylinder;fillColor=#FFFFCC;" vertex="1" parent="1">
+          <mxGeometry x="400" y="350" width="120" height="60" as="geometry"/>
+        </mxCell>
+
+        <!-- Connections -->
+        <mxCell id="e1" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="guest" target="p1"/>
+        <mxCell id="e2" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="p1" target="d1"/>
+        <mxCell id="e3" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="guest" target="p2"/>
+        <mxCell id="e4" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="p2" target="d2"/>
+        <mxCell id="e5" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="host" target="p3"/>
+        <mxCell id="e6" style="edgeStyle=elbowEdgeStyle;rounded=0;" edge="1" parent="1" source="p3" target="d3"/>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
